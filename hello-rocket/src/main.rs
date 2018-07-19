@@ -13,7 +13,7 @@ use tera::Context;
 fn index() -> Template {
     let mut context = Context::new();
 
-    context.add("my_message", &String::from("Heya from template context!"));
+    context.add("my_message", &String::from("Data entry successful"));
     Template::render("layout", &context)
 
 }
